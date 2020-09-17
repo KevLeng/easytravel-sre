@@ -1,7 +1,7 @@
 node {
     properties([
         parameters([
-         string(defaultValue: 'http://easytravel-dynatrace.com', description: 'URI of the EasyTravel Application you want to run a test against', name: 'DeploymentURI', trim: false),
+         string(defaultValue: 'http://ec2-3-104-37-76.ap-southeast-2.compute.amazonaws.com', description: 'URI of the EasyTravel Application you want to run a test against', name: 'DeploymentURI', trim: false),
         ])
     ])
 
