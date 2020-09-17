@@ -38,13 +38,13 @@ node {
 
         stage('Initialize Keptn') {
             // keptn.downloadFile('https://raw.githubusercontent.com/keptn-sandbox/performance-testing-as-selfservice-tutorial/master/shipyard.yaml', 'keptn/shipyard.yaml')
-            echo "Initialize Keptn and upload SLI,SLO and JMeter files from Github https://github.com/sergiohinojosa/easytravel-sre/"
-            keptn.downloadFile("https://raw.githubusercontent.com/sergiohinojosa/easytravel-sre/master/keptn/dynatrace.conf.yaml", 'keptn/dynatrace.conf.yaml')
-            keptn.downloadFile("https://raw.githubusercontent.com/sergiohinojosa/easytravel-sre/master/keptn/slo.yaml", 'keptn/slo.yaml')
-            keptn.downloadFile("https://raw.githubusercontent.com/sergiohinojosa/easytravel-sre/master/keptn/sli.yaml", 'keptn/sli.yaml')
-            keptn.downloadFile('https://raw.githubusercontent.com/sergiohinojosa/easytravel-sre/master/keptn/jmeter/easytravel-classic-random-book.jmx', 'keptn/jmeter/easytravel-classic-random-book.jmx')
-            keptn.downloadFile('https://raw.githubusercontent.com/sergiohinojosa/easytravel-sre/master/keptn/jmeter/easytravel-users.txt', 'keptn/jmeter/easytravel-users.txt')
-            keptn.downloadFile('https://raw.githubusercontent.com/sergiohinojosa/easytravel-sre/master/keptn/jmeter/jmeter.conf.yaml', 'keptn/jmeter/jmeter.conf.yaml')
+            echo "Initialize Keptn and upload SLI,SLO and JMeter files from Github https://github.com/KevLeng/easytravel-sre/"
+            keptn.downloadFile("https://raw.githubusercontent.com/KevLeng/easytravel-sre/master/keptn/dynatrace.conf.yaml", 'keptn/dynatrace.conf.yaml')
+            keptn.downloadFile("https://raw.githubusercontent.com/KevLeng/easytravel-sre/master/keptn/slo.yaml", 'keptn/slo.yaml')
+            keptn.downloadFile("https://raw.githubusercontent.com/KevLeng/easytravel-sre/master/keptn/sli.yaml", 'keptn/sli.yaml')
+            keptn.downloadFile('https://raw.githubusercontent.com/KevLeng/easytravel-sre/master/keptn/jmeter/easytravel-classic-random-book.jmx', 'keptn/jmeter/easytravel-classic-random-book.jmx')
+            keptn.downloadFile('https://raw.githubusercontent.com/KevLeng/easytravel-sre/master/keptn/jmeter/easytravel-users.txt', 'keptn/jmeter/easytravel-users.txt')
+            keptn.downloadFile('https://raw.githubusercontent.com/KevLeng/easytravel-sre/master/keptn/jmeter/jmeter.conf.yaml', 'keptn/jmeter/jmeter.conf.yaml')
             archiveArtifacts artifacts:'keptn/**/*.*'
 
             // Initialize the Keptn Project
