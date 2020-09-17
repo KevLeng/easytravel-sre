@@ -72,6 +72,8 @@ node {
         }
 
         stage('Wait for evaluation result') {
+			Thread.sleep = 5000;
+			
             waitTime = 0
             if(params.WaitForResult?.isInteger()) {
                 waitTime = params.WaitForResult.toInteger()
